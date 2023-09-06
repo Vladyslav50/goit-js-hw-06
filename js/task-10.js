@@ -33,6 +33,7 @@ function getRandomHexColor() {
 createButton.addEventListener("click", () => {
   const amount = input.value;
   createBoxes(amount);
+  input.value = ""; // Очищаємо інпут після створення
 });
 
 destroyButton.addEventListener("click", destroyBoxes);
